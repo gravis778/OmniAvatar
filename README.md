@@ -54,6 +54,11 @@ pip install "huggingface_hub[cli]"
 huggingface-cli download Wan-AI/Wan2.1-T2V-14B --local-dir ./pretrained_models/Wan2.1-T2V-14B
 huggingface-cli download facebook/wav2vec2-base-960h --local-dir ./pretrained_models/wav2vec2-base-960h
 huggingface-cli download OmniAvatar/OmniAvatar-14B --local-dir ./pretrained_models/OmniAvatar-14B
+
+For 1.3B models
+huggingface-cli download Wan-AI/Wan2.1-T2V-1.3B --local-dir ./pretrained_models/Wan2.1-T2V-1.3B
+huggingface-cli download facebook/wav2vec2-base-960h --local-dir ./pretrained_models/wav2vec2-base-960h
+huggingface-cli download OmniAvatar/OmniAvatar-1.3B --local-dir ./pretrained_models/OmniAvatar-1.3B
 ```
 
 #### File structure (Samples for 14B)
@@ -62,7 +67,12 @@ OmniAvatar
 ├── pretrained_models
 │   ├── Wan2.1-T2V-14B
 │   │   ├── ...
+│   ├── Wan2.1-T2V-1.3B
+│   │   ├── ...
 │   ├── OmniAvatar-14B
+│   │   ├── config.json
+│   │   └── pytorch_model.pt
+│   ├── OmniAvatar-1.3B
 │   │   ├── config.json
 │   │   └── pytorch_model.pt
 │   └── wav2vec2-base-960h
