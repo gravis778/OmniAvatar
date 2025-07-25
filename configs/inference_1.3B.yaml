@@ -26,6 +26,7 @@ max_hw: 720 # 720: 480p; 1280: 720p
 max_tokens: 30000  
 seq_len: 200
 overlap_frame: 13 # must be 1 + 4*n
+train_architecture: lora
 guidance_scale: 4.5
 audio_scale: 
 num_steps: 50
